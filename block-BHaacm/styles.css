@@ -171,5 +171,7 @@ footer{
   .btn{
     font-size: 1.5rem;
   }
-  
+  .hero{
+    flex-direction: column-reverse;
+  }
 }
