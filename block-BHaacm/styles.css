@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+  font-family: "Ballo Thambi 2", cursive;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* general css */
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+h2{
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+p{
+  color: var(--text-color);
+  font-size: 1rem;
+  /* text-align: justify; */
+  margin: 1rem 0;
+}
+.container{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.flex{
+  display: flex;
+}
+
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.flex-48{
+  flex: 0 1 48%;
+}
+.flex-30{
+  flex: 0 1 30%;
+}
+a{
+  text-decoration: none;
+}
+:root{
+  --primary: #222946;
+  --secondary: #37b667;
+  --text-color: #9498a9;
+}
+.btn{
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 0.9rem 1.2rem;
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+}
+/* custom css */
+.active{
+  color: var(--secondary);
+}
+.inactive{
+  color: #ffffff;
+}
+.hero{
+  background-color: #e9ecfc;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+.header{
+  background-color: var(--primary);
+  padding: 1rem 0;
+}
+.nav li{
+  margin-right: 1rem;
+}
+.nav li {
+  color: #ffffff;
+}
+img{
+  width: 100%;
+  object-fit: contain;
+}
+.blog{
+  padding: 1.5rem 0;
+}
+.blog h1{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.blog .btn{
+  padding: 0.5rem 0.8rem;
+}
+footer{
+  background-color: var(--primary);
+}
+/* media */
+@media screen and (max-width: 768px){
+  html{
+    font-size: 11px;
+  }
+  .flex{
+    flex-wrap:wrap;
+  }
+  .flex-30, .flex-48{
+    flex: 1 1 100%;
+  }
+  .column{
+  flex-direction: column;
+  }
+  .brand{
+    width: 30%;
+  }
+  .padding-top{
+    padding-top: 2rem ;
+  }
+  .padding{
+    padding: 1rem 0;
+  }
+  .btn{
+    font-size: 1.5rem;
+  }
+  
+}
